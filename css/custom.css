@@ -74,12 +74,12 @@ body {
 
 #servicos a.destaque:hover {
   background: #fff;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0, 0.12);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
   transform: scale(1.05);
 }
 
 #servicos p {
-  color: var(--dark)
+  color: var(--dark);
 }
 
 #servicos a.destaque .img-container {
@@ -94,5 +94,106 @@ body {
 }
 
 #clientes a.link-cliente {
-  
+  padding: 0 15px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px var(--light);
+  height: 100px;
+  transition: ease-out all 0.2s;
+}
+
+#clientes a.link-cliente:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+#clientes a.link-cliente img {
+  filter: grayscale(100%);
+  max-height: 70px;
+  width: 100%;
+  opacity: 0.6;
+}
+
+#clientes a.link-cliente:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+#clientes .cliente-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: var(--light);
+  border-radius: 5px;
+}
+
+#clientes .cliente-texto .imagem {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  margin-left: -70px;
+  color: #b4b4b4;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+#clientes .cliente-texto .imagem span {
+  color: var(--secondary);
+  font-size: 110px;
+  line-height: 110px;
+  letter-spacing: -10px;
+  font-weight: 900;
+  display: block;
+}
+
+#clientes .cliente-texto .telefone {
+  display: flex;
+  font-size: 14px;
+  color: #b4b4b4;
+}
+
+#clientes .cliente-texto .telefone span {
+  font-size: 25px;
+  color: #797979;
+  font-weight: 900;
+  display: block;
+}
+
+#servicos .badge {
+  font-weight: 400;
+}
+
+#servicos .element-item img {
+  border-radius: 5px;
+  transition: all ease-out 0.2s;
+}
+
+#servicos .element-item img:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+#servicos .button-group {
+  margin-bottom: 30px;
+}
+
+#servicos .button-group button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  outline: none;
+}
+
+#servicos .button-group button + button {
+  margin-left: 30px;
+}
+
+#servicos .button-group button.active {
+  color: var(--primary);
 }
